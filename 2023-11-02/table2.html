@@ -1,0 +1,79 @@
+<!-- table2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 테이블과 css </title>
+    <link rel="shortcut icon" href="./HAHA-logo.ico">
+    <!-- 로고 만드는 사이트 https://www.squarespace.com/logo -->
+    <!-- 배경 제거해주는 사이트 remove.bg -->
+
+    <!-- css를 사용하려면 head 태그 안에 style 태그를 만들어서 내부에 작성해야 한다. -->
+    <style>
+     /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border:1px solid black;
+            width:100px;
+            height:50px;
+            background-color:deepskyblue;
+            text-align:center;
+            font-size: 25px;  글씨 크기 변경 
+            color:white;  글씨 색 변경 
+            font-weight: 900;  글씨 굴기 
+            font-family: "Nanum Pen Script";  글꼴 변경
+            vertical-align: top;  수직정렬 
+        }  */
+
+        /* .클래스명 -> .은 클래스를 의미한다. */
+        .name{
+            width:200px;
+            background-color:ivory;
+            height:50px;
+            text-align:center;
+        }
+        .age{
+            border:2px dotted red;
+            font-size: 40px;
+        }
+
+        .info .job{
+            border:3px solid yellow;
+        }
+        
+        .job{
+            border:1px solid blue;
+            width:100px;
+        }
+        .info{
+            font-size:20px;
+        }
+        
+        /* hover: 마우스 커서를 갖다 대면 이벤트 발생 */
+        .name:hover{
+            font-size:30px;
+            color:blue;
+            background-color:aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="info">
+        <tr>
+            <td class="name">이순신</td>
+            <td class="age">34세</td>
+            <td class="job">군인</td>
+        </tr>
+        <tr>
+            <td class="name">정약용</td>
+            <td class="age">39세</td>
+            <td class="job">과학자</td>
+        </tr>
+    </table>
+    
+</body>
+</html> 

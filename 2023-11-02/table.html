@@ -1,0 +1,86 @@
+<!-- table.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+</head>
+<body>
+
+    <!-- colspan: 가로 방향 합치기,  rowspan: 세로 방향 합치기 -->
+    <table border="1">
+        <tr height="100">
+            <td width="300" colspan="3"></td>
+            <td width="50"></td>
+        </tr>
+        <tr height="100">
+            <td></td>
+            <td colspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr height="100">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        tr*4>td*3
+    </table>
+
+
+    <table border="1">
+        <tr height="50">
+            <td width="100" bgcolor="red">1</td>
+            <td width="100" bgcolor="red">2</td>
+            <td width="100">3</td>
+        </tr>
+        <tr height="50" bgcolor="blue">
+            <td align="center">1</td>
+            <td align="right">2</td>
+            <td>3</td>
+        </tr>
+        <tr height="50">
+            <td bgcolor="brown">1</td>
+            <td bgcolor="green">2</td>
+            <td bgcolor="green">3</td>
+        </tr>
+        <tr height="50">
+            <td bgcolor="brown">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    
+    
+    <!-- 
+        테이블에서 각 칸의 너비와 높이를 쉽게 지정하는 방법
+        너비는 첫번재 줄의 td들에게 주면 다른 줄에도 적용된다.
+        높이는 모든 줄의 첫번째 td에게 주면 뒤에 있는 칸에도 적용된다.
+    -->
+    <table border="1">
+        <tr><!-- table row -->
+            <td width="200" height="50" bgcolor="#FFC19E">1</td>
+            <td width="100" bgcolor="red">2</td>
+            <td width="50" bgcolor="pink">3</td>
+            <td width="100" bgcolor="brown">4</td>
+        </tr>
+        <tr height="80" bgcolor="orange">
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td height="50">9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
