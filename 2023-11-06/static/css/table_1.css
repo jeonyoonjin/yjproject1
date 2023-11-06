@@ -1,0 +1,36 @@
+/*  table.css  */
+/*
+  카멜케이스, 스네이크케이스
+  카멜표기법 - myPageInfo
+  스네이크표기법 - my_page_info
+  파스칼표기법 - MyPageInfo
+  헝가리안표기법 - class_numTd
+       g_val , s_val, c_val
+*/
+.box{
+    border: 1px solid;
+    border-collapse:collapse;
+}
+.log{
+    height: 30px;
+    border-collapse:collapse;
+}
+.menu{
+    border-collapse:collapse;
+    height: 50px;
+}
+.box tr{
+    border: 1px solid;
+    text-align:center;  
+}
+.box td{
+    width: 100px;
+}
+.schedule{
+    height:300px;
+}
+.schedule td{
+    width: 250px;
+    border: 1px solid;
+    text-align: left;
+}
