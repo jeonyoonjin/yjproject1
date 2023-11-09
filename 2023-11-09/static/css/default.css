@@ -1,0 +1,135 @@
+/* default.css */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+    padding: 30px;
+    background-color: aliceblue;
+}
+.menuWrap{
+    margin:0 auto;
+    background:#222845;
+    color:#eaeaea;
+    z-index: 100;
+}
+.menu{
+    display:inline-block;
+    padding: 15px 122px;
+    position:relative;
+}
+.menu:hover{
+    background:#eaeaea;
+    color:#222845;
+    cursor:pointer;
+}
+
+.siteDetail{
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    padding: 15px;
+
+}
+.siteDetail h2{
+    color: pink;
+}
+.siteDetail h4{
+    color: navy;
+    padding: 10px;
+}
+.siteDetail img{
+    margin-top: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+.siteUse .button{
+    width: 180px;
+    height: 50px;
+}
+.siteUse .button .freeSign{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgba(88, 182, 189, 0.342);
+    box-shadow: 2px 2px 2px darkblue;
+    border-radius: 5px;
+}
+.siteUse .button .devTool{
+    text-align: center;
+    background-color: rgba(88, 182, 189, 0.342);
+    box-shadow: 2px 2px 2px darkblue;
+    border-radius: 5px;
+}
+
+
+.card{
+    width: 100%;
+    height: 650px;
+    margin-top: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+.build:hover img{
+    transform: scale(1.2);
+}
+.build{
+    width: 300px;
+    border-bottom:3.5px solid rgb(106, 114, 230);;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    
+}
+.build img{
+    height: 200px;
+    transform: scale(1);
+    transition: transform 3s ease;
+}
+.build h3{
+    position: absolute;
+    width: 150px;
+    top: 250px;
+    background: rgb(106, 114, 230);
+    line-height: 30px;
+    border-radius: 15px;
+    color:white;
+
+}
+.learn:hover img{
+    transform: scale(1.2);
+}
+.learn{
+    width: 300px;
+    margin-top: 80px;
+    border-bottom:3.5px solid rgb(106, 114, 230);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+ .learn img{
+    height: 200px;
+    transform: scale(1);
+    transition: transform 3s ease;
+}
+.learn h3{
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    background: rgb(106, 114, 230);;
+    line-height: 30px;
+    border-radius: 15px;
+    color:white;
+
+}
+#footer{
+    width: 100%;
+    padding: 30px;
+    background: #222845;
+    color: #eaeaea;
+}
