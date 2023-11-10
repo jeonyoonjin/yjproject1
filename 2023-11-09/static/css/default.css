@@ -27,29 +27,41 @@
     cursor:pointer;
 }
 
-.siteDetail{
-    font-family: 'Nanum Pen Script', cursive;
+.siteDetail h2{
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
     padding: 15px;
-
-}
-.siteDetail h2{
     color: pink;
 }
+
 .siteDetail h4{
-    color: navy;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
     padding: 10px;
+    color: navy;
 }
 .siteDetail img{
-    margin-top: 20px;
+    position: relative;
+    left: 250px;
+    top:20px;
     width: 800px;
     height: 500px;
 }
 
 .siteUse .button{
+    padding-top: 50px;
     width: 180px;
     height: 50px;
+}
+.siteUse .button .freeSign:hover{
+    cursor:pointer;
+    background: navy;
+    color: white;
+}
+.siteUse .button .devTool:hover{
+    cursor:pointer;
+    background: navy;
+    color: white;
 }
 .siteUse .button .freeSign{
     text-align: center;
@@ -74,17 +86,15 @@
     border-top-left-radius: 10px;
     overflow: hidden;
 }
-
-.build:hover img{
-    transform: scale(1.2);
+.build:hover{
+    cursor: pointer;
 }
 .build{
-    width: 300px;
-    border-bottom:3.5px solid rgb(106, 114, 230);;
+    width: 330px;
+    border:3.5px solid rgb(106, 114, 230);;
     text-align: center;
     padding: 15px 0;
     position: relative;
-    
 }
 .build img{
     height: 200px;
@@ -94,37 +104,50 @@
 .build h3{
     position: absolute;
     width: 150px;
-    top: 250px;
+    top: 220px;
+    left: 95px;
     background: rgb(106, 114, 230);
     line-height: 30px;
     border-radius: 15px;
     color:white;
+    z-index: 100;
 
 }
+.build:hover img{
+    transform: scale(1.12);
+}
+
 .learn:hover img{
-    transform: scale(1.2);
+    transform: scale(1.12);
+}
+.learn:hover{
+    cursor: pointer;
 }
 .learn{
-    width: 300px;
+    width: 330px;
     margin-top: 80px;
-    border-bottom:3.5px solid rgb(106, 114, 230);
+    border:3.5px solid rgb(106, 114, 230);
     text-align: center;
     padding: 15px 0;
     position: relative;
+
 }
  .learn img{
     height: 200px;
     transform: scale(1);
     transition: transform 3s ease;
+
 }
 .learn h3{
     width: 150px;
     position: absolute;
-    top: 250px;
+    top: 220px;
+    left: 95px;
     background: rgb(106, 114, 230);;
     line-height: 30px;
     border-radius: 15px;
     color:white;
+    z-index: 100;
 
 }
 #footer{
