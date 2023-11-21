@@ -213,22 +213,56 @@
 
             var user = parseInt(prompt("업다운 게임"));
             var com = Math.floor(Math.random()*50)+1;
-            var a=0;
-            var b=0;
+            var a = 50;
+            var b = 1;
             for(;true;){
                 if( user > com){
                     console.log(com, "up");
-                    var a = Math.floor(Math.random()*(51-a))+b; //최소
-                    var b = Math.floor(Math.random()*b)+a; //최대
+                    var a = Math.floor(Math.random()*(50-com))+com; //최소 
+                        
+                    if( user > a && user > b){
+                        console.log(a, "up");
+                         //최소 
+                        var a = Math.floor(Math.random()*(a+1))+a;
+                    }
+                    else if( user <a && user >b ){
+                        console.log(a, "down");
+                        var a = Math.floor(Math.random()*(a+1))+1; //최소 
+                    }else{
+                        console.log( a," 정답 ! ");
+                        break
+                    }
                 } 
-               else if( user < com ){
+              else   if( user < com){
                     console.log(com, "down");
-                    var b = Math.floor(Math.random()*b)+a;
-                }
-                else if( user == com){
-                    console.log(com, " 정답 ! ");
-                    break;
-                }
+                    var b = Math.floor(Math.random()*(com+1))+1;     
+                    if( user > b && user >a ){
+                        console.log(b, "up");
+                        var b = Math.floor(Math.random()*(com-b))+b; //최소 
+                        var a = Math.floor(Math.random()*(com+1))+a; //최소 
+                    }
+                    else if( user <b && user >a  ){
+                        console.log(b, "down");
+                        var b = Math.floor(Math.random()*(com-b))+b; //최소 
+                        var a = Math.floor(Math.random()*(com+1))+a; //최소 
+                    }else{
+                        console.log( b," 정답 ! ");
+                        break;
+                    }
+                } 
+
+
+
+
+                // if( user < b ){
+                //     console.log(b, "down");
+                //     var a = Math.floor(Math.random()*(51-a))+a; //최소     
+                //     var b = Math.floor(Math.random()*(a+1))+b;
+                // }
+                // if( user == a ||user == b){
+                //     console.log( a,b," 정답 ! ");
+                //     break;
+                // }
             }
     </script>
 
